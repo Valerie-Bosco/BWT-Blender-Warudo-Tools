@@ -1,9 +1,9 @@
-[submodule "XNALara-io-Tools/modules/ALXModuleManager"]
-	path = XNALara-io-Tools/modules/ALXModuleManager
+[submodule "Warudo-Tools/modules/ALXModuleManager"]
+	path = Warudo-Tools/modules/ALXModuleManager
 	url = https://github.com/Valerie-Bosco/ALXModuleManager.git
-[submodule "XNALara-io-Tools/modules/ALXAddonUpdater"]
-	path = XNALara-io-Tools/modules/ALXAddonUpdater
+[submodule "Warudo-Tools/modules/ALXAddonUpdater"]
+	path = Warudo-Tools/modules/ALXAddonUpdater
 	url = https://github.com/Valerie-Bosco/ALXAddonUpdater.git
-[submodule "XNALara-io-Tools/modules/ALXCompatibilityLayer"]
-	path = XNALara-io-Tools/modules/ALXCompatibilityLayer
+[submodule "Warudo-Tools/modules/ALXCompatibilityLayer"]
+	path = Warudo-Tools/modules/ALXCompatibilityLayer
 	url = https://github.com/Valerie-Bosco/ALXCompatibilityLayer.git

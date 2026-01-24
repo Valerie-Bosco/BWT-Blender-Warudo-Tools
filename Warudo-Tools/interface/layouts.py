@@ -22,6 +22,7 @@ class WT_PT_WarudoNPanel(bpy.types.Panel):
 
         settings = context.window_manager.warudo_tools
 
+        layout.prop(settings, "model_collection", text="Model")
         row = layout.row().split(factor=0.25, align=True)
         row.operator(export.WT_OT_WarudoFBXExport.bl_idname, text="FBX", icon="EXPORT")
         row.prop(settings, "export_path", icon="FILE_FOLDER", text="")

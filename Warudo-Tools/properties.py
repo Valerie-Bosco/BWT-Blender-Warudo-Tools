@@ -2,6 +2,10 @@ import bpy
 
 
 class WT_PG_WarudoToolsSettings(bpy.types.PropertyGroup):
+    model_collection: bpy.props.PointerProperty(  # type:ignore
+        type=bpy.types.Collection
+    )
+
     export_path: bpy.props.StringProperty(  # type:ignore
         name="Export Path", subtype="FILE_PATH", default=""
     )

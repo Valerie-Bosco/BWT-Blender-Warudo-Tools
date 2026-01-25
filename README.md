@@ -21,9 +21,9 @@ Discord Server: https://discord.gg/44fSbYrzZd
 ### Installation:
 
 - Download
-  the [BWT-Blender-Warudo-Tools.zip ](https://github.com/Valerie-Bosco/BWT-Blender-Warudo-Tools/releases/download/main_branch_latest/BWT-Blender-Warudo-Tools.zip)
+  the [BWT-Blender-Warudo-Tools.zip ](https://github.com/Valerie-Bosco/BWT-Blender-Warudo-Tools/releases/download/)
   available from
-  the [releases](https://github.com/Valerie-Bosco/BWT-Blender-Warudo-Tools/releases/tag/main_branch_latest) page,
+  the [releases](https://github.com/Valerie-Bosco/BWT-Blender-Warudo-Tools/releases/) page,
 - In blender [4.1-]: preferences -> addons -> install addon -> select the [BWT-Blender-Warudo-Tools.zip] -> click
   install
 - In blender [4.2+]: preferences -> addons -> top right dropdown -> install from disk -> select

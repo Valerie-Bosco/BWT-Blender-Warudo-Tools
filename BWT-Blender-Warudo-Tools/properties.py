@@ -1,7 +1,7 @@
 import bpy
 
 
-class WT_PG_WarudoToolsSettings(bpy.types.PropertyGroup):
+class BWT_PG_WarudoToolsSettings(bpy.types.PropertyGroup):
     model_collection: bpy.props.PointerProperty(  # type:ignore
         type=bpy.types.Collection
     )
@@ -13,7 +13,7 @@ class WT_PG_WarudoToolsSettings(bpy.types.PropertyGroup):
 
 def register_properties():
     bpy.types.WindowManager.warudo_tools = bpy.props.PointerProperty(
-        type=WT_PG_WarudoToolsSettings
+        type=BWT_PG_WarudoToolsSettings
     )
 
 

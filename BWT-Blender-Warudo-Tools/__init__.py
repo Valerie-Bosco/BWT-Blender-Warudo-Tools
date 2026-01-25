@@ -7,16 +7,16 @@ from .modules.ALXModuleManager.ALXModuleManager.ALX_ModuleManager import (
 )
 
 bl_info = {
-    "name": "Warudo-Tools",
+    "name": "BWT-Blender-Warudo-Tools",
     "author": "Valerie Bosco[Valerie Arhal]",
     "description": "",
     "warning": "",
-    "version": (0, 1, 0),
+    "version": (0, 1, 1),
     "blender": (3, 6, 0),
     "category": "3D View",
     "location": "",
-    "doc_url": "https://github.com/Valerie-Bosco/Warudo-Tools/wiki",
-    "tracker_url": "https://github.com/Valerie-Bosco/Warudo-Tools/issues",
+    "doc_url": "https://github.com/Valerie-Bosco/BWT-Blender-Warudo-Tools/wiki",
+    "tracker_url": "https://github.com/Valerie-Bosco/BWT-Blender-Warudo-Tools/issues",
 }
 
 module_manager = Alx_Module_Manager(path=__path__, globals=globals(), mute=True)
@@ -25,8 +25,8 @@ addon_updater = Alx_Addon_Updater(
     bl_info=bl_info,
     engine="Github",
     engine_user_name="Valerie-Bosco",
-    engine_repo_name="Warudo-Tools",
-    manual_download_website="https://github.com/Valerie-Bosco/Warudo-Tools/releases/tag/main_branch_latest",
+    engine_repo_name="BWT-Blender-Warudo-Tools",
+    manual_download_website="https://github.com/Valerie-Bosco/BWT-Blender-Warudo-Tools/releases/tag/main_branch_latest",
 )
 
 from .properties import register_properties, unregister_properties

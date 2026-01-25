@@ -2,11 +2,11 @@ from pathlib import Path
 
 import bpy
 
-from ..properties import WT_PG_WarudoToolsSettings
+from ..properties import BWT_PG_WarudoToolsSettings
 
 
 def clone_model(context: bpy.types.Context) -> bpy.types.Collection:
-    settings: WT_PG_WarudoToolsSettings = context.window_manager.warudo_tools
+    settings: BWT_PG_WarudoToolsSettings = context.window_manager.warudo_tools
 
     if settings.model_collection is not None:
         target_collection = bpy.data.collections.get(settings.model_collection.name)
@@ -50,11 +50,11 @@ def apply_all(context: bpy.types.Context, collection: bpy.types.Collection):
         bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
 
 
-class WT_OT_WarudoFBXExport(bpy.types.Operator):
+class BWT_OT_WarudoFBXExport(bpy.types.Operator):
     """"""
 
     bl_label = ""
-    bl_idname = "wt.warudo_fbx_export"
+    bl_idname = "bwt.warudo_fbx_export"
     bl_description = "Export the active collection to FBX to the specified path. File name is determined by the active collection."
     bl_options = {"REGISTER", "UNDO"}
 
@@ -63,7 +63,7 @@ class WT_OT_WarudoFBXExport(bpy.types.Operator):
         return True
 
     def execute(self, context: bpy.types.Context):
-        settings: WT_PG_WarudoToolsSettings = context.window_manager.warudo_tools
+        settings: BWT_PG_WarudoToolsSettings = context.window_manager.warudo_tools
 
         model_collection = settings.model_collection
 

@@ -11,7 +11,7 @@ bl_info = {
     "author": "Valerie Bosco[Valerie Arhal]",
     "description": "",
     "warning": "",
-    "version": (0, 1, 1),
+    "version": (0, 1, 2),
     "blender": (3, 6, 0),
     "category": "3D View",
     "location": "",

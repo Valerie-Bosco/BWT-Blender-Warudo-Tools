@@ -38,16 +38,16 @@ def apply_all(context: bpy.types.Context, collection: bpy.types.Collection):
         for collection_object in collection.objects
         if (
                 collection_object.type in ["MESH", "ARMATURE"]
-                and not collection_object.hide_get()
+                and collection_object.hide_get() == False
         )
     ]
+    if len(target_objects) > 0:
+        target_context = context.copy()
+        target_context["active_object"] = target_objects[0]
+        target_context["selected_objects"] = target_objects
 
-    target_context = context.copy()
-    target_context["active_object"] = target_objects[0]
-    target_context["selected_objects"] = target_objects
-
-    with context.temp_override(**target_context):
-        bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
+        with context.temp_override(**target_context):
+            bpy.ops.object.transform_apply(location=True, rotation=True, scale=True)
 
 
 class BWT_OT_WarudoFBXExport(bpy.types.Operator):
